@@ -20,12 +20,11 @@ export class CreateHeroComponent implements OnInit {
   }
 
   save() {
-    console.log('create');
+    // console.log('create');
     // console.log(this.name);
-    // const data = this.name;
-    // console.log(data);
-    // this.heroService.createHero(data)
-    // .subscribe(response => console.log(response));
+    const data = this.name;
+    this.heroService.createHero(data)
+    .subscribe(response => console.log(response));
   }
 
 }
